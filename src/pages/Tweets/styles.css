@@ -1,0 +1,23 @@
+#tweetsContainer {
+  padding:20px;
+  overflow: auto;
+}
+
+#hashtagTitle{
+  color: #20a2f1;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
+}    
+
+#tweetsContent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #tweetsContent {
+    grid-template-columns: 1fr !important;
+  }
+}

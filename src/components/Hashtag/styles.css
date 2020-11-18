@@ -1,0 +1,36 @@
+.hashtag {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+  padding: 3px 0.75em 3px 0.75em;
+  background-color: #3498db;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.hashtag span {
+  cursor: pointer;
+}
+
+.hashtag span:hover {
+  text-decoration: underline;
+}
+
+.trashIcon {
+  height: 13px;
+  width: 13px;
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.trashIcon:hover {
+  color: #d6d6d6;
+}

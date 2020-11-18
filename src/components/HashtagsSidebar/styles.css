@@ -1,0 +1,125 @@
+#sidebarContainer {
+  height: 100%;
+  background: #fff;
+  flex: 1;
+  max-width: 450px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+#header h1{
+  font-size: 24px;
+  color: #1da1f2;
+}
+
+#header a {
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: .2s;
+}
+
+#header a:hover {
+  color: #3498db;
+}
+
+#searchContainer {
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+#searchInput::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+#searchContainer form {
+  width: 100%;
+}
+
+.searchIcon {
+  color: #989898;
+  width: 16px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 16px;
+}
+
+#searchInput {
+  padding: 15px 15px 15px 40px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  background: rgb(230, 236, 240);
+  font-size: 15px;
+}
+
+#searchContainer button {
+  color: #fff;
+  margin-left: 5px;
+  border: none;
+  border-radius: 33px;
+  font-size: 16px;
+  width: 140px;
+  padding: 10px;
+  background: #1da1f2;
+  transition: 0.5s;
+}
+
+#searchContainer button:hover {
+  background:#1785c7;
+}
+
+
+#hashtagsContainer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.current {
+  color: #3498db;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+
+  #sidebarContainer {
+    max-width: none;
+  }
+
+  #header {
+    display: block;
+  }
+
+  #header h1 {
+    margin-bottom: 17px;
+  }
+
+  #hashtagsContainer ul {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .hashtag {
+    display: inline-block;
+  }
+
+  #tweetsContent {
+    grid-template-columns: 1fr;
+  }
+}
